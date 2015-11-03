@@ -5,7 +5,7 @@
 ### Opción 1 (Fácil): Valido para todos los sistemas operativos
 
 1. Tener/Instalar VirtualBox: https://www.virtualbox.org/wiki/Downloads.
-2. Descargar la máquina virtual del taller: **pendiente link**.
+2. Descargar la máquina virtual del taller: https://www.dropbox.com/s/83i4cll8lgo6dzr/SparkR%3A%20Jornadas7.ova.
 
 **Nota:** Se necesita como mínimo un ordenador de 64bits y 4gb de ram.
 
