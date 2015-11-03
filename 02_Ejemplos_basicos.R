@@ -31,7 +31,7 @@ sqlContext <- sc %>% sparkRSQL.init()
 df_iris <- sqlContext %>% createDataFrame(iris)
 
 #' Spark es vago (*lazy*) en ejecución, ¿qué significa esto? Solo se ejecuta
-#' las sentencias cuando son extrictamente necesarias. Por ejemplo: 
+#' las sentencias cuando son estrictamente necesarias. Por ejemplo: 
 #' 
   p <- proc.time()
   df_filtrado <- df_iris %>% filter(df_iris$Species=="setosa")

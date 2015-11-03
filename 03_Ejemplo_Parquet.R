@@ -58,7 +58,7 @@ sc <- sparkR.init(master = "local[*]",appName = "Prueba III: Parquet")
 sqlContext <- sc %>% sparkRSQL.init()
 
 #' <br>
-#' Spark ya tiene las librerías necesarías para leer archivos de tipo Parquet, así que 
+#' Spark ya tiene las librerías necesarias para leer archivos de tipo Parquet, así que 
 #' la manera de leer es muy fácil:
 
 
@@ -78,7 +78,7 @@ meta %>% head
 #'
 #' <br>
 #'
-#' Primero eliminamos las filas con la categoría vacia y cacheamos el `DataFrame` resultante:
+#' Primero eliminamos las filas con la categoría vacía y cacheamos el `DataFrame` resultante:
 
 meta <- meta %>% filter(meta$category!="") %>% cache()
 
@@ -108,7 +108,7 @@ categorias$category %>%
 query
 
 #' Una vez tenemos construida la primera query, registramos el `DataFrame` para
-#' poder ejectuarla (si no, no se podría procesar el trozo de "`from meta`"):
+#' poder ejecutarla (si no, no se podría procesar el trozo de "`from meta`"):
 
 meta %>% registerTempTable("meta")
 expandido <- sqlContext %>% sql(query)

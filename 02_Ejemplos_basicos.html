@@ -92,7 +92,7 @@ sc &lt;-<span class="st"> </span><span class="kw">sparkR.init</span>(<span class
 <p><br><br></p>
 <p>Creamos de nuevo un <code>DataFrame</code> basado en <code>iris</code> de nuevo</p>
 <pre class="sourceCode r"><code class="sourceCode r">df_iris &lt;-<span class="st"> </span>sqlContext %&gt;%<span class="st"> </span><span class="kw">createDataFrame</span>(iris)</code></pre>
-<p>Spark es vago (<em>lazy</em>) en ejecución, ¿qué significa esto? Solo se ejecuta las sentencias cuando son extrictamente necesarias. Por ejemplo:</p>
+<p>Spark es vago (<em>lazy</em>) en ejecución, ¿qué significa esto? Solo se ejecuta las sentencias cuando son estrictamente necesarias. Por ejemplo:</p>
 <pre class="sourceCode r"><code class="sourceCode r">  p &lt;-<span class="st"> </span><span class="kw">proc.time</span>()
   df_filtrado &lt;-<span class="st"> </span>df_iris %&gt;%<span class="st"> </span><span class="kw">filter</span>(df_iris$Species==<span class="st">&quot;setosa&quot;</span>)
   <span class="kw">proc.time</span>()-p</code></pre>
