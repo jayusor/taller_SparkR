@@ -1,0 +1,113 @@
+/* FONTS */
+
+@font-face {
+	font-family: 'TelefonicaHeadlineLightRegular';
+	src: local('TelefonicaHeadlineLightRegular'),
+		 url('fonts/TELEFONICAHEADLINELIGHT.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'TelefonicaTextBold';
+	src: local('TelefonicaTextBold'), 
+		 url('fonts/TELEFONICATEXTBOLD.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TelefonicaTextItalic';
+	src: local('TelefonicaTextItalic'), 
+		 url('fonts/TELEFONICATEXTITALIC.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TelefonicaTextRegular';
+	src: local('TelefonicaTextRegular'), 
+		 url('fonts/TELEFONICATEXTREGULAR.otf') format('opentype'), 		 
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* BASE */
+
+#header{
+
+   padding-top: 20px;
+    
+}
+
+.title {
+    font-size: 2.5em;
+    margin: 15px 0px 30px;
+    text-align: right;
+    float: right;
+    color: #00C6DA;
+    font-family: 'TelefonicaHeadlineLightRegular';
+}
+
+
+
+h1, h2, h3, h4{
+  font-family: 'TelefonicaHeadlineLightRegular';
+  color: #00333B;
+}
+
+h1{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+ h2, h3, h4{
+     font-size: 1.5em;
+}
+
+ p, body{
+  font-family: 'TelefonicaHeadlineLightRegular';
+  color: #00333B;
+}
+
+
+.logo_telefonica .tit h1 small {
+    float: right;
+    text-transform: none;
+    font-size: 55%;
+    color: #00C6DA;
+    transition: all 0.5s ease 0s;
+}
+
+
+.logo{
+  width: 25%;
+}
+
+.author{
+  background-image: url("telefonica.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: 20px;
+  background-size: 25%;
+  padding-top: 80px;
+}
+
+.date{
+  text-align: right;
+  float: right;
+  margin-top: -60px;
+}
+
+h2{
+  font-weight: bold;
+  margin-top: 45px;
+}
+
+img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
